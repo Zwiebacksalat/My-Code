@@ -1,0 +1,8 @@
+#Problem: Find the uncorrect Amino Acid letters in the protein
+protein = "SDCUIHASDLJSHHAIDGSIUDGBIASNALDBGIUADVGDAUGVBS"
+corrected_protein = ""
+for i in range(len(protein)):
+    if protein[i] not in "ABCDEFGHIKLMNPQRSVWXYZ":
+        continue
+    corrected_protein=corrected_protein+protein[i]
+print("Corrected protein sequence is: %s" %corrected_protein)
