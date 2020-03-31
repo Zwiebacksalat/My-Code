@@ -1,0 +1,4 @@
+protein = "SDCUIHASDLJSHHAIDGSIUDGBIASNALDBGIUADVGDAUGVBS"
+for i in range(len(protein)):
+    if protein [i] not in "ABCDEFGHIKLMNPQRSVWXYZ":
+        print("protein contains invalid amino acid %s at position %d" % (protein[i],i))
